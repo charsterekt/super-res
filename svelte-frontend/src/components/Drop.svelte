@@ -44,7 +44,7 @@
 		var loader = document.getElementById('enhance-loader')
 		var enhanced_imagebox = document.getElementById('imagebox')
 		var upload_div = document.getElementById('upload-container')
-		enhanced_imagebox.setAttribute('src', 'assets/download-sign.png')
+		enhanced_imagebox.setAttribute('src', 'assets/download-icon.png')
 		loader.style.display = 'block'
 		enhanced_imagebox.style.display = 'none'
 		upload_div.style.pointerEvents = 'none'
@@ -53,7 +53,7 @@
 		var data = new FormData()
 		data.append('image', files.accepted[0])
 		console.log(data)
-		fetch('http://127.0.0.1:5000/image', {
+		fetch('https://swellte.herokuapp.com/image', {
 			method: 'POST',
 			body: data
 		})
