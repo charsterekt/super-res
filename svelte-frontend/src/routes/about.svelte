@@ -84,6 +84,14 @@
             was used to create a simple microservice to interact with the model within Python. It is a
             small and lightweight framework.
         </p>
+		
+	<p class="para">
+            <span class="first-word">Experimental</span>&nbsp;alpha channel processing is a current drawback.
+		ESRGAN lacks the capability to process alpha channels in images that it upscales (transparency in png files).
+		To combat the current limitation of the model, I have applied a filter that converts every black pixel in
+		the returned image to transparent, since the processed alpha channel turns solid black. However, this may have
+		an unintended effect on images with black pixels in the subject.
+        </p>
 
         <p class="para">
             <span class="first-word">Limitations</span>&nbsp;with the project are the lack of ability to
