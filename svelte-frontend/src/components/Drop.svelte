@@ -118,7 +118,7 @@
 			<p class="instructional">Drag and drop an image here or click to select a file</p>
 			<div class="upload-area">
 				<Dropzone
-					accept="image/*"
+					accept="image/jpeg, image/jpg, image/png"
 					multiple={false}
 					maxSize={1572864}
 					disableDefaultStyles={true}
